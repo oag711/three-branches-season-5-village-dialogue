@@ -39,3 +39,17 @@ Test the connection with:
 ```console
 python -m sandbox llm
 ```
+
+Design Goal
+
+My goal is to make the village feel more alive by giving villagers jobs, daily routines, and conversations with the visitor. By talking to them, visitors should learn about the different jobs in the village, what the villagers take care of, and how everyone contributes to keeping the village running.
+
+Short Reflection
+
+Each villager has an assigned workplace, such as the pump, benches, crops, or crates. Their conversations are based on their job around the village. Villagers explain what they are working on and why it is important. I kept their replies consistent by using scripted responses for common questions about jobs and village life.
+
+After the Season 4 feedback, I focused on improving villager movement and making their daily routines more consistent. I added route planning that avoids other villagers when possible and rebuilds routes when another villager blocks the way. I also improved their schedules so they go to their assigned workplaces during the day and return home at night. Another important change was removing the wait for LLM-generated replies because it caused the villagers to stop responding or acting immediately when someone talked to them.
+
+AI-Use Disclosure and Reflection
+
+I used ChatGPT to help with improving the villagers' conversations and movement. I checked the suggestions by reviewing the code and testing the villagers in the game to see if their jobs, movement, and conversations worked as expected. Using AI helped me understand problems and find ways to improve the project, but I still needed to test the changes because some suggestions did not work correctly at first.
